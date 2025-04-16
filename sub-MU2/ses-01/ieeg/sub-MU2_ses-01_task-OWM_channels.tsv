@@ -1,0 +1,9 @@
+name	type	units	low_cutoff	high_cutoff	sampling_frequency	modulated	n_trials	padding
+LMTG-8	EEG	uV	n/a	n/a	1000	1	54	331398
+LMTG-16	EEG	uV	n/a	n/a	1000	1	75	194940
+LMTG-17	EEG	uV	n/a	n/a	1000	1	77	181944
+LMTG-18	EEG	uV	n/a	n/a	1000	1	75	194940
+LMTG-23	EEG	uV	n/a	n/a	1000	1	105	0
+LMTG-38	EEG	uV	n/a	n/a	1000	1	104	6498
+LMTG-39	EEG	uV	n/a	n/a	1000	1	104	6498
+LMTG-40	EEG	uV	n/a	n/a	1000	1	104	6498

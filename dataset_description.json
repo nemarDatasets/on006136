@@ -1,0 +1,28 @@
+{
+    "Name": "OWM-Dataset",
+    "BIDSVersion": "1.10.0",
+    "HEDVersion": "8.2.0",
+    "DatasetLinks": "",
+    "License": "",
+    "Authors": [
+        "",
+        "",
+        ""
+    ],
+    "Acknowledgements": "",
+    "HowToAcknowledge": "",
+    "Funding": [
+        "",
+        "",
+        ""
+    ],
+    "EthicsApprovals": [
+        ""
+    ],
+    "ReferencesAndLinks": [
+        "",
+        "",
+        ""
+    ],
+    "DatasetDOI": "doi:"
+}
