@@ -3,11 +3,12 @@
     "BIDSVersion": "1.10.0",
     "HEDVersion": "8.2.0",
     "DatasetLinks": "",
-    "License": "",
+    "License": "CC0",
     "Authors": [
         "",
         "",
-        ""
+        "",
+        "Vladimir Omelyusik"
     ],
     "Acknowledgements": "",
     "HowToAcknowledge": "",
