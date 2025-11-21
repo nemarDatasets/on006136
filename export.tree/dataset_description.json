@@ -1,0 +1,31 @@
+{
+    "Name": "OWM-Dataset",
+    "BIDSVersion": "1.10.0",
+    "HEDVersion": "8.2.0",
+    "DatasetLinks": "",
+    "License": "CC0",
+    "Authors": [
+        "Vladimir Omelyusik",
+        "Tyler S. Davis",
+        "Satish S. Nair",
+        "Behrad Noudoost",
+        "Patrick Hackett",
+        "Elliot H. Smith",
+        "Shervin Rahimpour",
+        "John D. Rolston",
+        "Bornali Kundu"
+    ],
+    "Acknowledgements": "",
+    "HowToAcknowledge": "",
+    "Funding": [
+        "K12 grant from the Neurosurgery Career Development Award, parent award from the NINDS as well as a Neurosurgery Research Education Fund award",
+        "NIH/NINDS career development award to JDR (K23 NS114178)",
+        "NIMH grant MH122023 (SSN)"
+    ],
+    "EthicsApprovals": [
+        "This protocol was approved by the University of Utah Institutional Review Board and the University of Missouri Institutional Review Board",
+        "Written consent was obtained from all participants by the research team, separate from the clinical team, and the patient was informed that study participation did not affect their clinical care in any way"
+    ],
+    "ReferencesAndLinks": [],
+    "DatasetDOI": "doi:10.18112/openneuro.ds006136.v1.0.0"
+}
