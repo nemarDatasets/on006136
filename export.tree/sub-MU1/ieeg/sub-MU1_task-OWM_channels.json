@@ -1,0 +1,5 @@
+{
+ "modulated": "Whether the channel is broadband-modulated (0 = no, 1 = yes).",
+ "n_trials": "Number of concatenated trials for this channel.",
+ "padding": "Number of zeros used for padding on the right side."
+}
