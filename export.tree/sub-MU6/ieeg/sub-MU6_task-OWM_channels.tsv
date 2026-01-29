@@ -1,0 +1,13 @@
+name	type	units	low_cutoff	high_cutoff	sampling_frequency	modulated	n_trials	padding
+RMTG-6	EEG	uV	n/a	n/a	1000	1	60	298908
+RMTG-7	EEG	uV	n/a	n/a	1000	1	86	129960
+RMTG-8	EEG	uV	n/a	n/a	1000	1	71	227430
+RMTG-65	EEG	uV	n/a	n/a	1000	1	81	162450
+RMTG-66	EEG	uV	n/a	n/a	1000	1	88	116964
+RMTG-97	EEG	uV	n/a	n/a	1000	1	95	71478
+RMTG-98	EEG	uV	n/a	n/a	1000	1	86	129960
+RMTG-99	EEG	uV	n/a	n/a	1000	1	84	142956
+RMFG-110	EEG	uV	n/a	n/a	1000	1	106	0
+RMFG-112	EEG	uV	n/a	n/a	1000	1	106	0
+RMFG-113	EEG	uV	n/a	n/a	1000	1	92	90972
+RMFG-114	EEG	uV	n/a	n/a	1000	1	89	110466
