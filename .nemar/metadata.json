@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "OWM-Dataset",
-  "description": "This dataset comprises processed intracranial EEG recordings from frontal and temporal cortical regions in 13 epilepsy patients performing a load-3 object working memory task. The recordings were obtained from left and right middle frontal gyrus and middle temporal gyrus, with trials spanning 6498 ms including fixation, encoding, and delay periods. Data have undergone artifact rejection and preprocessing as detailed in the associated publication, with trial-level performance metrics included.",
-  "methods_description": "Intracranial EEG recordings were collected from frontal (LMFG, RMFG) and temporal (LMTG, RMTG) regions during a load-3 object working memory task. Each trial lasted 6498 ms (1000 ms fixation, 1500 ms encoding, 3998 ms delay). Data underwent artifact rejection procedures at the single-trial level. Recordings were stored in EDF format with trials concatenated per channel and zero-padded to ensure uniform data length across channels within subjects.",
+  "description": "This dataset comprises processed intracranial EEG recordings from frontal and temporal cortical regions in 13 epilepsy patients performing a load-3 object working memory task. The recordings include 6498 ms trials spanning fixation, encoding, and delay periods, with artifact-rejected data organized by channel and subject. The dataset supports investigation of neural mechanisms underlying working memory maintenance and cognitive control in human intracranial recordings.",
+  "methods_description": "Intracranial EEG recordings were obtained from frontal (left and right middle frontal gyrus) and temporal (left and right middle temporal gyrus) regions during a load-3 object working memory task. Data underwent artifact rejection procedures at the single-trial level, with trial structure consisting of 1000 ms fixation, 1500 ms encoding, and 3998 ms delay periods. Trials were concatenated per channel and stored in EDF format with zero-padding for consistent array lengths across channels within subjects.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -37,9 +37,6 @@
       "term": "working memory"
     },
     {
-      "term": "electrocorticography"
-    },
-    {
       "term": "frontal cortex"
     },
     {
@@ -47,6 +44,9 @@
     },
     {
       "term": "epilepsy patients"
+    },
+    {
+      "term": "cognitive control"
     }
   ],
   "related_identifiers": [
