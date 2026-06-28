@@ -1,46 +1,126 @@
 {
   "version": "2.0",
-  "dataset_id": "on006136",
-  "source": "openneuro",
-  "source_id": "ds006136",
+  "pipeline_stage": "enriched",
   "title": "OWM-Dataset",
-  "authors": {
-    "Vladimir Omelyusik": {},
-    "Tyler S. Davis": {},
-    "Satish S. Nair": {},
-    "Behrad Noudoost": {},
-    "Patrick Hackett": {},
-    "Elliot H. Smith": {},
-    "Shervin Rahimpour": {},
-    "John D. Rolston": {},
-    "Bornali Kundu": {}
-  },
   "license": "CC0",
   "dataset_type": "raw",
+  "authors": {
+    "Vladimir Omelyusik": {
+      "orcid": "0009-0009-3658-2616"
+    },
+    "Tyler S. Davis": {
+      "orcid": "0000-0001-8823-6189"
+    },
+    "Satish S. Nair": {
+      "orcid": "0000-0002-1489-7029"
+    },
+    "Behrad Noudoost": {},
+    "Patrick Hackett": {},
+    "Elliot H. Smith": {
+      "orcid": "0000-0003-4323-4643"
+    },
+    "Shervin Rahimpour": {},
+    "John D. Rolston": {
+      "orcid": "0000-0002-8843-5468"
+    },
+    "Bornali Kundu": {
+      "orcid": "0000-0002-3613-3695"
+    }
+  },
   "related_identifiers": [
     {
       "identifier": "10.18112/openneuro.ds006136.v1.0.1",
       "identifier_type": "DOI",
       "relation_type": "IsIdenticalTo"
+    },
+    {
+      "identifier": "https://github.com/nemarDatasets/on006136",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/on006136",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.1016/j.neuroimage.2026.121718",
+      "identifier_type": "DOI",
+      "relation_type": "IsDescribedBy"
     }
-  ],
-  "pipeline_stage": "seeded",
-  "bids_version": "1.10.0",
-  "recording_modality": [
-    "ieeg"
-  ],
-  "datatypes": [
-    "ieeg"
   ],
   "funding_references": [
     {
-      "funder_name": "K12 grant from the Neurosurgery Career Development Award, parent award from the NINDS as well as a Neurosurgery Research Education Fund award"
+      "funder_name": "NINDS",
+      "award_number": "K12",
+      "award_title": "Neurosurgery Career Development Award"
     },
     {
-      "funder_name": "NIH/NINDS career development award to JDR (K23 NS114178)"
+      "funder_name": "NIH/NINDS",
+      "award_number": "K23 NS114178"
     },
     {
-      "funder_name": "NIMH MH122023 and NSF-OAC 2417875 (SSN)"
+      "funder_name": "NIMH",
+      "award_number": "MH122023"
+    },
+    {
+      "funder_name": "NSF",
+      "award_number": "OAC 2417875"
+    },
+    {
+      "funder_name": "NINDS",
+      "award_number": "K12 Neurosurgery Career Development Award",
+      "award_title": "Neurosurgery Career Development Award"
+    },
+    {
+      "funder_name": "NINDS",
+      "award_number": "K12 NS",
+      "award_title": "Neurosurgery Career Development Award"
     }
-  ]
+  ],
+  "modalities": [
+    "ieeg"
+  ],
+  "resource_type_specific": "iEEG Dataset",
+  "sizes": [
+    "0.0 KB (1 files)"
+  ],
+  "formats": [
+    ".edf",
+    ".json",
+    ".md",
+    ".tsv"
+  ],
+  "description": "This dataset comprises processed intracranial EEG recordings from frontal and temporal cortical regions in 13 epilepsy patients performing a load-3 object working memory task. The recordings were obtained from bilateral medial frontal gyrus and middle temporal gyrus, with trials structured to include fixation, encoding, and delay periods. Data have undergone artifact rejection and are provided in concatenated format with accompanying performance metrics and trial indexing information.",
+  "methods_description": "Intracranial EEG recordings were collected from frontal (LMFG, RMFG) and temporal (LMTG, RMTG) regions during a load-3 object working memory task. Each trial was 6498 ms in duration, comprising 1000 ms fixation, 1500 ms encoding, and 3998 ms delay periods. Data underwent artifact rejection procedures at the single-trial level. Trials were concatenated into one-dimensional arrays per channel and padded with zeros to ensure uniform data length within subjects.",
+  "keywords": [
+    {
+      "term": "intracranial EEG"
+    },
+    {
+      "term": "working memory"
+    },
+    {
+      "term": "electrocorticography"
+    },
+    {
+      "term": "prefrontal cortex"
+    },
+    {
+      "term": "temporal lobe"
+    },
+    {
+      "term": "epilepsy patients"
+    },
+    {
+      "term": "medial frontal gyrus"
+    },
+    {
+      "term": "middle temporal gyrus"
+    },
+    {
+      "term": "artifact rejection"
+    }
+  ],
+  "source_hash": "615ae78e08aa831d339b1b49529d412012f11c3c5fde376ac2d3e4aeb499e26a"
 }
