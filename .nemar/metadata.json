@@ -1,7 +1,9 @@
 {
   "version": "2.0",
-  "pipeline_stage": "enriched",
+  "pipeline_stage": "validated",
   "title": "OWM-Dataset",
+  "description": "This dataset comprises processed intracranial EEG recordings from frontal and temporal cortical regions in 13 epilepsy patients performing a load-3 object working memory task. The recordings were obtained from left and right middle frontal gyrus and middle temporal gyrus, with trials spanning 6498 ms including fixation, encoding, and delay periods. Data have undergone artifact rejection and preprocessing as detailed in the associated publication, with trial-level performance metrics included.",
+  "methods_description": "Intracranial EEG recordings were collected from frontal (LMFG, RMFG) and temporal (LMTG, RMTG) regions during a load-3 object working memory task. Each trial lasted 6498 ms (1000 ms fixation, 1500 ms encoding, 3998 ms delay). Data underwent artifact rejection procedures at the single-trial level. Recordings were stored in EDF format with trials concatenated per channel and zero-padded to ensure uniform data length across channels within subjects.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -27,12 +29,27 @@
       "orcid": "0000-0002-3613-3695"
     }
   },
-  "related_identifiers": [
+  "keywords": [
     {
-      "identifier": "10.18112/openneuro.ds006136.v1.0.1",
-      "identifier_type": "DOI",
-      "relation_type": "IsIdenticalTo"
+      "term": "intracranial EEG"
     },
+    {
+      "term": "working memory"
+    },
+    {
+      "term": "electrocorticography"
+    },
+    {
+      "term": "frontal cortex"
+    },
+    {
+      "term": "temporal cortex"
+    },
+    {
+      "term": "epilepsy patients"
+    }
+  ],
+  "related_identifiers": [
     {
       "identifier": "https://github.com/nemarDatasets/on006136",
       "identifier_type": "URL",
@@ -47,6 +64,11 @@
       "identifier": "10.1016/j.neuroimage.2026.121718",
       "identifier_type": "DOI",
       "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.18112/openneuro.ds006136.v1.0.1",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
     }
   ],
   "funding_references": [
@@ -66,61 +88,21 @@
     {
       "funder_name": "NSF",
       "award_number": "OAC 2417875"
-    },
-    {
-      "funder_name": "NINDS",
-      "award_number": "K12 Neurosurgery Career Development Award",
-      "award_title": "Neurosurgery Career Development Award"
-    },
-    {
-      "funder_name": "NINDS",
-      "award_number": "K12 NS",
-      "award_title": "Neurosurgery Career Development Award"
     }
   ],
+  "resource_type_specific": "iEEG Dataset",
   "modalities": [
     "ieeg"
   ],
-  "resource_type_specific": "iEEG Dataset",
   "sizes": [
-    "0.0 KB (1 files)"
+    "299.8 MB (16 files)"
   ],
   "formats": [
     ".edf",
     ".json",
     ".md",
-    ".tsv"
+    ".tsv",
+    ".yml"
   ],
-  "description": "This dataset comprises processed intracranial EEG recordings from frontal and temporal cortical regions in 13 epilepsy patients performing a load-3 object working memory task. The recordings were obtained from bilateral medial frontal gyrus and middle temporal gyrus, with trials structured to include fixation, encoding, and delay periods. Data have undergone artifact rejection and are provided in concatenated format with accompanying performance metrics and trial indexing information.",
-  "methods_description": "Intracranial EEG recordings were collected from frontal (LMFG, RMFG) and temporal (LMTG, RMTG) regions during a load-3 object working memory task. Each trial was 6498 ms in duration, comprising 1000 ms fixation, 1500 ms encoding, and 3998 ms delay periods. Data underwent artifact rejection procedures at the single-trial level. Trials were concatenated into one-dimensional arrays per channel and padded with zeros to ensure uniform data length within subjects.",
-  "keywords": [
-    {
-      "term": "intracranial EEG"
-    },
-    {
-      "term": "working memory"
-    },
-    {
-      "term": "electrocorticography"
-    },
-    {
-      "term": "prefrontal cortex"
-    },
-    {
-      "term": "temporal lobe"
-    },
-    {
-      "term": "epilepsy patients"
-    },
-    {
-      "term": "medial frontal gyrus"
-    },
-    {
-      "term": "middle temporal gyrus"
-    },
-    {
-      "term": "artifact rejection"
-    }
-  ],
-  "source_hash": "615ae78e08aa831d339b1b49529d412012f11c3c5fde376ac2d3e4aeb499e26a"
+  "source_hash": "8996fcd44acbef91eeef112899e990d3e6f47878d760b38c2331be4eb7fe3920"
 }
