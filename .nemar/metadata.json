@@ -1,0 +1,46 @@
+{
+  "version": "2.0",
+  "dataset_id": "on006136",
+  "source": "openneuro",
+  "source_id": "ds006136",
+  "title": "OWM-Dataset",
+  "authors": {
+    "Vladimir Omelyusik": {},
+    "Tyler S. Davis": {},
+    "Satish S. Nair": {},
+    "Behrad Noudoost": {},
+    "Patrick Hackett": {},
+    "Elliot H. Smith": {},
+    "Shervin Rahimpour": {},
+    "John D. Rolston": {},
+    "Bornali Kundu": {}
+  },
+  "license": "CC0",
+  "dataset_type": "raw",
+  "related_identifiers": [
+    {
+      "identifier": "10.18112/openneuro.ds006136.v1.0.1",
+      "identifier_type": "DOI",
+      "relation_type": "IsIdenticalTo"
+    }
+  ],
+  "pipeline_stage": "seeded",
+  "bids_version": "1.10.0",
+  "recording_modality": [
+    "ieeg"
+  ],
+  "datatypes": [
+    "ieeg"
+  ],
+  "funding_references": [
+    {
+      "funder_name": "K12 grant from the Neurosurgery Career Development Award, parent award from the NINDS as well as a Neurosurgery Research Education Fund award"
+    },
+    {
+      "funder_name": "NIH/NINDS career development award to JDR (K23 NS114178)"
+    },
+    {
+      "funder_name": "NIMH MH122023 and NSF-OAC 2417875 (SSN)"
+    }
+  ]
+}
