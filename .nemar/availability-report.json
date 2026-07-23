@@ -1,0 +1,43 @@
+{
+  "dataset_id": "on006136",
+  "version": "1.0.0",
+  "generated_at": "2026-07-23T01:28:27.223Z",
+  "source": {
+    "type": "openneuro",
+    "id": "ds006136"
+  },
+  "complete": false,
+  "completeness": {
+    "files_present": 14,
+    "files_declared": 18,
+    "bytes_present": 299755695,
+    "bytes_declared": 300405465,
+    "pct_bytes": 0.9978370233710628
+  },
+  "missing": [
+    {
+      "path": "tmp54n3wlmx",
+      "key": "SHA256E-s0--e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "declared_size": 0,
+      "reason": "absent"
+    },
+    {
+      "path": "tmp7edmt29_",
+      "key": "SHA256E-s0--e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "declared_size": 0,
+      "reason": "absent"
+    },
+    {
+      "path": "tmpf1j_5523",
+      "key": "SHA256E-s0--e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "declared_size": 0,
+      "reason": "absent"
+    },
+    {
+      "path": "tmpw6dd7czq",
+      "key": "SHA256E-s0--e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "declared_size": 0,
+      "reason": "absent"
+    }
+  ]
+}
