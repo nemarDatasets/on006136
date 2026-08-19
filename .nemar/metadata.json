@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "OWM-Dataset",
-  "description": "This dataset comprises processed intracranial EEG recordings from frontal and temporal cortical regions in 13 epilepsy patients performing a load-3 object working memory task. The recordings include 6498 ms trials spanning fixation, encoding, and delay periods, with artifact-rejected data organized by channel and subject. The dataset supports investigation of neural mechanisms underlying working memory maintenance and cognitive control in human intracranial recordings.",
-  "methods_description": "Intracranial EEG recordings were obtained from frontal (left and right middle frontal gyrus) and temporal (left and right middle temporal gyrus) regions during a load-3 object working memory task. Data underwent artifact rejection procedures at the single-trial level, with trial structure consisting of 1000 ms fixation, 1500 ms encoding, and 3998 ms delay periods. Trials were concatenated per channel and stored in EDF format with zero-padding for consistent array lengths across channels within subjects.",
+  "description": "This dataset contains processed intracranial EEG (iEEG) recordings from frontal (LMFG, RMFG) and temporal (LMTG, RMTG) brain regions of 13 epilepsy patients performing a load-3 object working memory task. Data were collected to investigate neural mechanisms underlying working memory maintenance using intracranial electrophysiology. The dataset includes trial-level recordings after artifact rejection, along with behavioral performance data indicating task accuracy.",
+  "methods_description": "Each trial lasted 6498 ms, consisting of 1000 ms fixation, 1500 ms encoding, and 3998 ms delay periods. Trials for each channel were concatenated into a single one-dimensional array and padded with zeros to ensure equal length across channels for .edf format compliance. Artifact rejection was performed at the single-trial level, resulting in unmatched trial indices across channels, with trial matching information provided in the sourcedata folder.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -37,16 +37,22 @@
       "term": "working memory"
     },
     {
-      "term": "frontal cortex"
+      "term": "Epilepsy",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D004827"
     },
     {
-      "term": "temporal cortex"
+      "term": "Prefrontal Cortex",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D017397"
     },
     {
-      "term": "epilepsy patients"
+      "term": "Temporal Lobe",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D013702"
     },
     {
-      "term": "cognitive control"
+      "term": "electrophysiology"
     }
   ],
   "related_identifiers": [
@@ -63,7 +69,7 @@
     {
       "identifier": "10.1016/j.neuroimage.2026.121718",
       "identifier_type": "DOI",
-      "relation_type": "IsDescribedBy"
+      "relation_type": "IsSupplementTo"
     },
     {
       "identifier": "10.18112/openneuro.ds006136.v1.0.1",
@@ -73,9 +79,11 @@
   ],
   "funding_references": [
     {
+      "funder_name": "K12 grant from the Neurosurgery Career Development Award, parent award from the NINDS as well as a Neurosurgery Research Education Fund award"
+    },
+    {
       "funder_name": "NINDS",
-      "award_number": "K12",
-      "award_title": "Neurosurgery Career Development Award"
+      "award_title": "Neurosurgery Career Development Award (K12)"
     },
     {
       "funder_name": "NIH/NINDS",
