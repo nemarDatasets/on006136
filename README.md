@@ -21,3 +21,17 @@ The sourcedata/ folder contains performance results for every subject. Rows of e
 
 ## Reading the data and replicating the results
 The Paper repository (https://github.com/V-Marco/FT-bursting-WM) includes a Python function for reading the data, performing trial matching, appending performance information, and representing the recordings as a 2D table. The repository also includes examples on replicating the main figures. 
+
+## Channel names follow the data headers (18 Oct 2026)
+
+In 14 recordings the channel list of channels.tsv did not equal the data-file header (names, order or count), so `mne_bids.read_raw_bids` stopped with 'Channel mismatch' (or 'Duplicate channel names'); EEGDash renamed the data channels by position to the channels.tsv names, which gives wrong labels wherever the two lists are not aligned. Since 18 Oct 2026 every channels.tsv lists exactly the header channels, in header order, with the header names (MNE names: duplicated header labels numbered -0, -1).
+
+Rows were matched to header channels BY NAME, never by position (exact; then case/whitespace; then the recorder prefix 'EEG '/'POL ', '_' and zero padding; then a trailing '-<reference>' token). Matched rows keep all their columns (type, units, status, ...); 143 rows took the header name.
+
+The data headers of this dataset name the channels by contact number only (e.g. `26`), while channels.tsv and electrodes.tsv used region-prefixed names (e.g. `LMTG-26`). The channels.tsv name is now the header name and the former name is kept in the new column `contact_name` (described in the root channels.json); it equals the electrodes.tsv `name`, so positions can be attached with `raw.rename_channels(dict(zip(ch['name'], ch['contact_name'])))`.
+
+## Electrode locations (19 Oct 2026)
+
+Sub-MU3 electrodes.tsv -999 sentinel -> n/a. Evidence: One row of sub-MU3_electrodes.tsv used -999 as a missing-value sentinel in x/y/z, which MNE read as -999 mm; it is now n/a. No other value changed.
+
+This dataset mirrors OpenNeuro; the same change belongs upstream.

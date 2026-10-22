@@ -1,0 +1,5 @@
+{
+    "contact_name": {
+        "Description": "Name of this channel in the channels.tsv before 18 Oct 2026 (region-prefixed contact name, equal to electrodes.tsv name). The name column now equals the EDF header label (contact number)."
+    }
+}

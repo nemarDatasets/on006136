@@ -1,3 +1,9 @@
+1.0.2 2026-10-22
+  - 2026-10-19 electrode locations: sub-MU3 electrodes.tsv -999 sentinel -> n/a (1 files). README: section 'Electrode locations (19 Oct 2026)'.
+  - channels.tsv of 14 recordings = the data-file header channel list (name, order, count; matched by name): 143 rows renamed to the header name, 0 rows added, 0 rows removed, 0 files reordered. mne_bids read_raw_bids raised 'Channel mismatch'.
+  - channels.tsv: new column `contact_name` with each row's former label, described in a new root channels.json.
+  - README: section 'Channel names follow the data headers'.
+
 1.0.0 2025-04-17
   - Create the dataset
 1.0.1 2026-01-29
